@@ -1,0 +1,6 @@
+{
+  "name": "Loongst.GitHub.io",
+  "tagline": "日常随笔-vim安装与配置",
+  "body": "<div># ubuntu14.04安装vim</div><div>1.apt-get install vim &nbsp; #安装目录默认为/usr/share/vim&nbsp;</div><div>2.安装ctags 下载地址http://ctags.sourceforge.net; &nbsp;</div><div>&nbsp; tar -zxvf ctags.xxx.gz;&nbsp;</div><div>&nbsp; ./configure;</div><div>&nbsp; make;</div><div>&nbsp; make install;&nbsp;</div><div>&nbsp;在编写源代码的目录下执行：ctags -R 生成ctags；在vimrc文件中添加set tags=/源码路径/tags；使用ctrl+]查看函数定义</div><div>3.安装TagList 下载地址http://www.vim.org/scripts/script.php?script_id=273&nbsp;</div><div>&nbsp;解压到~/.vim文件夹中，在vimrc中添let Tlist_Show_One_File=1换行let Tlist_Exit_OnlyWindow=1 ；</div><div>&nbsp;在使用vim中，底行命令输入Tlist</div><div>4.安装WinManager 下载地址http://www.vim.org/scripts/script.php?script_id=95&nbsp;</div><div>&nbsp;解压到~/.vim文件夹中，在vimrc中添加let g:winManagerWindowLayout='FileExplorer|TagList' 换行nmap wm :WMToggle&lt;cr&gt;</div><div>&nbsp;一般模式下输入wm使用（注意：不是底行命令模式）</div>",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
